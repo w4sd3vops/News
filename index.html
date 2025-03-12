@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notícias atualizadas diariamente em formato minimalista">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">📰 Daily News</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="news-container" id="newsContainer"></main>
+
+    <!-- Footer com Redes Sociais -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2024 Daily News. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" aria-label="Abrir Chatbot">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="chatbot-window hidden">
+            <div class="chatbot-header">
+                <h2>Assistente Virtual</h2>
+                <button class="chatbot-close" aria-label="Fechar Chatbot">&times;</button>
+            </div>
+            <div class="chatbot-body" id="chatMessages"></div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Digite sua mensagem..." aria-label="Mensagem do usuário">
+                <button id="sendMessage" aria-label="Enviar mensagem"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
