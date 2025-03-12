@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_KEY = 'SUA_CHAVE_API_AQUI'; // Chave válida
+    const API_KEY = 'API22f76f063e3246c1949244be84cbec34'; // Chave válida
     const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
     const API_URL = `${PROXY_URL}https://newsapi.org/v2/top-headlines?country=br&pageSize=10`;
 
